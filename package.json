@@ -1,0 +1,69 @@
+{
+  "name": "react-exchange-rate-bar-chart",
+  "version": "1.0.5",
+  "description": "React component that renders an interactive bar chart comparing two currencies over a variable number of months.",
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "homepage": "",
+  "files": [
+    "css",
+    "es",
+    "lib",
+    "umd"
+  ],
+  "scripts": {
+    "build": "nwb build-react-component",
+    "start": "nwb serve-react-demo",
+    "test": "nwb test-react",
+    "test:coverage": "nwb test-react --coverage",
+    "test:watch": "nwb test-react --server"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "4.0.3",
+    "web-vitals": "^1.0.1"
+
+  },
+  "peerDependencies": {
+    "react": "16.x"
+  },
+  "devDependencies": {
+    "nwb": "0.25.x",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "author": "Greg Plechaty",
+  "license": "MIT",
+  "repository": "https://github.com/gregplechaty/npm-currency-compare-bar-chart",
+  "keywords": [
+    "react-component",
+    "exchange rate",
+    "exchange rates",
+    "exchange-rate",
+    "exchange",
+    "rates",
+    "currency"
+  ]
+}

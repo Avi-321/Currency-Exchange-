@@ -1,0 +1,152 @@
+body {
+  background-color: #345;
+  font: 16px sans-serif, sans-serif;
+  color: #fafaff;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 400px;
+  margin: 10px auto;
+  padding: 0 10px;
+}
+
+.form__title {
+  margin: 10px auto;
+
+  font: 4rem "sans-serif", cursive;
+  text-align: center;
+
+  color: #FF9;
+}
+
+@media screen and (max-width: 375px) {
+  .form__title {
+    font-size: 3.5rem;
+  }
+}
+
+.spinner {
+  margin-right: -50%;
+
+  position: fixed;
+  top: 8rem;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 375px) {
+  .spinner {
+    top: 7.5rem;
+  }
+}
+
+.field__label {
+  font-weight: 700;
+  line-height: 1.7;
+  letter-spacing: .1rem;
+}
+
+.input {
+  height: 1.5rem;
+  width: 95%;
+  margin-bottom: 10px;
+  padding: .5rem;
+
+  font-weight: 600;
+  color: #345;
+
+  border: 1px solid inherit;
+  box-shadow: 1px 1px 2px inherit;
+  border-radius: 5px;
+}
+
+.input:focus {
+  box-shadow: 2px 2px 4px #dfd;
+}
+
+.input.invalid {
+  border: 2px solid rgba(220, 20, 60, 0.7);
+}
+
+.error__message {
+  font-size: .8rem;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: normal;
+  color: #dc143c;
+}
+
+.buttons__area {
+  display: flex;
+}
+
+.button {
+  width: 30%;
+  display: block;
+  margin: 10px auto;
+
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+
+  border-color: transparent;
+  border-radius: 5px;
+  cursor: pointer;
+
+  transition: transform .3s linear;
+}
+
+.button:hover,
+.button:focus {
+  color: #fafaff;
+
+  background-color: #234;
+  box-shadow: 2px 2px 4px #dfd;
+
+  transform: scale(.95);
+}
+
+.button:disabled {
+  color: #c0c0cc;
+
+  background-color: #fafaff;
+  border-color: transparent;
+  box-shadow: none;
+
+  transform: none;
+}
+
+.submit__button::after {
+  content: "Go!";
+}
+
+.submit__button:hover::after {
+  content: "Faster!";
+}
+
+.submit__button:disabled::after {
+  content: "Go!";
+}
+
+.reset__button::after {
+  content: "Reset";
+}
+
+.reset__button:hover::after {
+  content: "Really?";
+}
+
+.reset__button:disabled::after {
+  content: "Reset";
+}
+
+.thanks {
+  margin: 20px auto;
+
+  text-align: center;
+  line-height: 1.4;
+}
